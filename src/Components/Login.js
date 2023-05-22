@@ -18,8 +18,9 @@ const Login = ({ navigation }) => {
     //local state to manage userData from Firebase
     const [userData, setUserData] = useState([])
     //context used to manage userKey while login from Firebase
-    const{userKey,setUserKey, load} = useContext(AppContext)
+    const{userKey,setUserKey} = useContext(AppContext)
     //variable used for Formik Refernce to reset values
+    const{load} = useContext(AppContext)
 
 
     const formikRef = useRef()
