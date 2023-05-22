@@ -125,6 +125,8 @@ const Home = ({ navigation }) => {
         let arr = [...data]
         taskSelect.map(l => {
             arr = arr.filter(i => i.id != l.id)
+            bin.push(l)
+            l.select=false
         })
         setData(arr)
         setTaskSelect([])
